@@ -4,19 +4,19 @@ import java.time.LocalDate;
 
 public class Todo {
 
-	public Todo(int id, String username, String description, LocalDate targateDate, boolean done) {
+	public Todo(int id, String username, String description, LocalDate targetDate, boolean done) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.description = description;
-		this.targateDate = targateDate;
+		this.targetDate = targetDate;
 		this.done = done;
 	}
 
 	private int id;
 	private String username;
 	private String description;
-	private LocalDate targateDate;
+	private LocalDate targetDate;
 	private boolean done;
 
 	public int getId() {
@@ -43,12 +43,12 @@ public class Todo {
 		this.description = description;
 	}
 
-	public LocalDate getTargateDate() {
-		return targateDate;
+	public LocalDate getTargetDate() {
+		return targetDate;
 	}
 
 	public void setTargateDate(LocalDate targateDate) {
-		this.targateDate = targateDate;
+		this.targetDate = targateDate;
 	}
 
 	public boolean isDone() {
@@ -61,8 +61,8 @@ public class Todo {
 
 	@Override
 	public String toString() {
-		return "Todo [id=" + id + ", username=" + username + ", description=" + description + ", targateDate="
-				+ targateDate + ", done=" + done + "]";
+		return "Todo [id=" + id + ", username=" + username + ", description=" + description + ", targetDate="
+				+ targetDate + ", done=" + done + "]";
 	}
 
 }
